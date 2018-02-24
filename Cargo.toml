@@ -1,0 +1,13 @@
+[package]
+name = "str_bench"
+version = "0.1.0"
+authors = ["Matthias Krüger <matthias.krueger@famsik.de>"]
+
+[dependencies]
+bencher = "0.1"
+
+
+[profile.release]
+opt-level=3
+codegen-units=1
+lto=true
